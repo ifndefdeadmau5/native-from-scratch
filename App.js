@@ -1,15 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import MainScreen, { navigationOptions } from './src/components/MainScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
-const d = a;
-a = 2;
+const AppStackNavigator = createStackNavigator({
+  Main: {
+    screen: MainScreen,
+    navigationOptions,
+  },
+});
+
+export default createAppContainer(AppStackNavigator);
 
 const styles = StyleSheet.create({
   container: {
