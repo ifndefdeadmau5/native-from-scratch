@@ -8,7 +8,7 @@ import FeedTab from './AppTabNavigator/FeedTab';
 
 export const navigationOptions = {
   headerLeft: <Icon name="ios-camera" style={{ paddingLeft: 10 }} />,
-  title: 'Instagram',
+  title: 'Alucard',
   headerRight: <Icon name="ios-send" style={{ paddingRight: 10 }} />,
   headerTitleContainerStyle: {
     justifyContent: 'center',
@@ -27,7 +27,7 @@ const AppTabNavigator = createMaterialBottomTabNavigator({
   ),
   } },
 }, {
-  initialRouteName: 'CameraTab',
+  initialRouteName: 'FeedTab',
   activeColor: '#f0edf6',
   inactiveColor: '#3e2465',
   barStyle: { backgroundColor: '#694fad' },
